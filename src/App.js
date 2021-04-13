@@ -6,7 +6,8 @@ import ColorItem from './ColorItem';
 function App() {
   const [color, setColor] = useState('');
   const [error, setError] = useState(false);
-  const [list, setList] = useState([]);
+  // Values(컬러값).all(구부단위값%)
+  const [list, setList] = useState(new Values('#3498db').all(10));
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,7 +34,7 @@ function App() {
               setError(false)
               console.log(color)
             }}
-            placeholder="#abcdef(16진수 color)"
+            placeholder="#3498db"
             className={error ? "error":""}
           />
           <button className="btn">Generate</button>
