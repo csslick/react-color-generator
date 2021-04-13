@@ -2,8 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  text-align: center;
+}
 header {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   padding: 20px;
 }
